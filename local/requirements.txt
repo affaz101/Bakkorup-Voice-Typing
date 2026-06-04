@@ -1,0 +1,8 @@
+customtkinter
+pystray
+Pillow
+websockets
+sounddevice
+keyboard
+bnbphoneticparser
+numpy
