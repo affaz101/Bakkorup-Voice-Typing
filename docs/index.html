@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- THE ULTIMATE DARK MODE KILLERS -->
+    <meta name="color-scheme" content="light only">
+    <meta name="darkreader-lock"> <!-- This forcefully disables Dark Reader extensions -->
+
+    <title>Bakkorup - The Ultimate Offline Bengali Voice Typing</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/logo.png">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Download Bakkorup (বাক্যরূপ) for free! The ultimate offline Bengali Speech to Text (Voice Typing) software for Windows PC. Features real-time Banglish transliteration and zero latency.">
+    <meta name="keywords"
+        content="Bengali Voice Typing, Bangla Speech to Text, Offline Voice Typing PC, Banglish Transliteration, Windows, Bakkorup">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800;900&family=Noto+Sans+Bengali:wght@400;600;800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        /* ==========================================
+           PREMIUM WARM/GOLDEN LIGHT THEME
+           Designed to make Dark Blue/Metallic logos POP
+           ========================================== */
+        :root {
+            color-scheme: light;
+            /* Very Light Ivory/Golden White - NOT pure white */
+            --bg-primary: #FCFBF7;
+            --bg-secondary: #FFFDF9;
+
+            /* Deep contrasts for text */
+            --text-main: #0B1120;
+            --text-muted: #475569;
+
+            /* Theme Accents (Matching Logo: Royal Blue & Gold) */
+            --accent-gold: #F59E0B;
+            --accent-light-gold: #FEF3C7;
+            --accent-blue: #1D4ED8;
+            --accent-light-blue: #DBEAFE;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', 'Noto Sans Bengali', sans-serif;
+        }
+
+        /* Enforce background forcefully to override any residual dark mode */
+        body {
+            background-color: var(--bg-primary) !important;
+            color: var(--text-main) !important;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* Utility Classes */
+        .hidden {
+            opacity: 0;
+            transform: translateY(60px) scale(0.95);
+            transition: all 1.2s cubic-bezier(0.25, 1, 0.5, 1);
+        }
+
+        .show {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+
+        /* ==========================================
+           RICH BACKGROUND EFFECTS & SHAPES 
+           ========================================== */
+
+        .bg-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+            overflow: hidden;
+            pointer-events: none;
+            background-color: var(--bg-primary) !important;
+        }
+
+        /* Glowing Orbs (Soft Gold & Blue Pastels) */
+        .orb {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(120px);
+            opacity: 0.7;
+            animation: float 15s infinite alternate ease-in-out;
+        }
+
+        .orb-1 {
+            width: 700px;
+            height: 700px;
+            background: var(--accent-light-gold);
+            top: -200px;
+            left: -200px;
+        }
+
+        .orb-2 {
+            width: 600px;
+            height: 600px;
+            background: var(--accent-light-blue);
+            bottom: -100px;
+            right: -100px;
+            animation-delay: -5s;
+        }
+
+        /* Floating Geometric Shapes */
+        .shape {
+            position: absolute;
+            border: 2px solid rgba(0, 0, 0, 0.03);
+            animation: spinFloat 20s linear infinite;
+        }
+
+        .shape-circle {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            top: 15%;
+            right: 5%;
+            border-color: rgba(245, 158, 11, 0.2);
+            /* Gold border */
+            border-width: 4px;
+        }
+
+        .shape-square {
+            width: 120px;
+            height: 120px;
+            bottom: 25%;
+            left: 5%;
+            border-color: rgba(29, 78, 216, 0.15);
+            /* Blue border */
+            border-width: 3px;
+            animation-direction: reverse;
+        }
+
+        /* Floating Particles */
+        .particle {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background: var(--accent-gold);
+            border-radius: 50%;
+            box-shadow: 0 0 15px var(--accent-gold);
+            animation: rise 10s infinite linear;
+            opacity: 0.6;
+        }
+
+        .p1 {
+            left: 20%;
+            bottom: -10px;
+            animation-duration: 9s;
+        }
+
+        .p2 {
+            left: 80%;
+            bottom: -10px;
+            animation-duration: 13s;
+            background: var(--accent-blue);
+            box-shadow: 0 0 15px var(--accent-blue);
+        }
+
+        .p3 {
+            left: 50%;
+            bottom: -10px;
+            animation-duration: 16s;
+            background: var(--accent-gold);
+        }
+
+        @keyframes float {
+            0% {
+                transform: translate(0, 0) scale(1);
+            }
+
+            100% {
+                transform: translate(80px, 80px) scale(1.1);
+            }
+        }
+
+        @keyframes spinFloat {
+            0% {
+                transform: rotate(0deg) translateY(0);
+            }
+
+            50% {
+                transform: rotate(180deg) translateY(40px);
+            }
+
+            100% {
+                transform: rotate(360deg) translateY(0);
+            }
+        }
+
+        @keyframes rise {
+            0% {
+                transform: translateY(100vh) scale(0);
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 0.8;
+                scale: 1.2;
+            }
+
+            100% {
+                transform: translateY(-100px) scale(0);
+                opacity: 0;
+            }
+        }
+
+        /* ==========================================
+           LAYOUT & SECTIONS
+           ========================================== */
+        section {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            padding: 6rem 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+            z-index: 1;
+        }
+
+        /* Typography */
+        h1 {
+            font-size: clamp(3rem, 6vw, 5rem);
+            font-weight: 900;
+            line-height: 1.1;
+            letter-spacing: -2px;
+            background: linear-gradient(135deg, var(--accent-blue), #0F172A);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent !important;
+            margin-bottom: 1.5rem;
+            text-shadow: 0 10px 30px rgba(29, 78, 216, 0.1);
+        }
+
+        h2 {
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 800;
+            color: var(--text-main) !important;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+        p {
+            font-size: 1.25rem;
+            color: var(--text-muted) !important;
+            line-height: 1.7;
+        }
+
+        /* Buttons */
+        .cta-group {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 3rem;
+        }
+
+        .btn {
+            padding: 1.2rem 3rem;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            text-decoration: none;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, var(--accent-blue), #2563EB);
+            z-index: -1;
+            transition: opacity 0.3s ease;
+        }
+
+        .btn-primary {
+            color: #ffffff !important;
+            box-shadow: 0 20px 40px -10px rgba(29, 78, 216, 0.4);
+            border: none;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 30px 50px -10px rgba(29, 78, 216, 0.6);
+        }
+
+        .btn-primary:hover::before {
+            opacity: 0.9;
+        }
+
+        .btn-secondary {
+            background: #ffffff;
+            color: var(--accent-blue) !important;
+            border: 2px solid var(--accent-blue);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        .btn-secondary::before {
+            display: none;
+        }
+
+        .btn-secondary:hover {
+            transform: translateY(-5px) scale(1.05);
+            background: var(--accent-blue);
+            color: #ffffff !important;
+            box-shadow: 0 20px 40px -10px rgba(29, 78, 216, 0.3);
+        }
+
+        /* Hero Section */
+        .hero {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .hero-logo {
+            width: 450px;
+            max-width: 80vw;
+            filter: drop-shadow(0 25px 35px rgba(0, 0, 0, 0.2)) drop-shadow(0 0 50px rgba(245, 158, 11, 0.2));
+            animation: heroBounce 4s infinite alternate ease-in-out;
+            margin-bottom: 2rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        @keyframes heroBounce {
+            0% {
+                transform: translateY(0) scale(1);
+            }
+
+            100% {
+                transform: translateY(-15px) scale(1.02);
+                filter: drop-shadow(0 35px 45px rgba(0, 0, 0, 0.25)) drop-shadow(0 0 60px rgba(245, 158, 11, 0.3));
+            }
+        }
+
+        /* Split Layouts & Glass Cards */
+        .split {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 5rem;
+            width: 100%;
+        }
+
+        .split.reverse {
+            flex-direction: row-reverse;
+        }
+
+        .split-content {
+            flex: 1;
+            max-width: 550px;
+        }
+
+        .split-visual {
+            flex: 1;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* The Ultra-Premium Warm Glass Card */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(255, 255, 255, 1);
+            border-radius: 30px;
+            padding: 1rem;
+            backdrop-filter: blur(40px);
+            -webkit-backdrop-filter: blur(40px);
+            box-shadow:
+                0 40px 80px -20px rgba(0, 0, 0, 0.15),
+                inset 0 0 0 2px rgba(255, 255, 255, 0.8);
+            transform: perspective(1200px) rotateY(-8deg) rotateX(8deg);
+            transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            position: relative;
+        }
+
+        .split.reverse .glass-card {
+            transform: perspective(1200px) rotateY(8deg) rotateX(8deg);
+        }
+
+        .glass-card:hover {
+            transform: perspective(1200px) rotateY(0deg) rotateX(0deg) scale(1.05) translateY(-10px);
+            box-shadow:
+                0 60px 100px -20px rgba(29, 78, 216, 0.2),
+                inset 0 0 0 2px rgba(255, 255, 255, 1);
+        }
+
+        .glass-card img {
+            width: 100%;
+            border-radius: 20px;
+            display: block;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        }
+
+        /* Floating elements on top of cards */
+        .floating-badge {
+            position: absolute;
+            background: linear-gradient(135deg, var(--accent-gold), #FDE68A);
+            color: #78350F;
+            padding: 12px 24px;
+            border-radius: 50px;
+            font-weight: 800;
+            font-size: 1.1rem;
+            box-shadow: 0 15px 30px rgba(245, 158, 11, 0.3);
+            animation: float 4s infinite alternate ease-in-out;
+            z-index: 10;
+        }
+
+        .floating-badge.top-left {
+            top: -25px;
+            left: -40px;
+        }
+
+        .floating-icon {
+            position: absolute;
+            width: 110px;
+            filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.15));
+            animation: float 5s infinite alternate ease-in-out;
+            z-index: 10;
+        }
+
+        .floating-icon.bottom-right {
+            bottom: -40px;
+            right: -50px;
+            animation-delay: -2s;
+        }
+
+        /* Themed Grid (Day/Night) */
+        .theme-showcase {
+            flex-direction: column;
+            text-align: center;
+            gap: 5rem;
+        }
+
+        .theme-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            width: 100%;
+        }
+
+        .theme-item {
+            position: relative;
+            padding: 2rem;
+        }
+
+        /* Heavy Glows behind the cards */
+        .glow-behind {
+            position: absolute;
+            inset: 0;
+            border-radius: 40px;
+            filter: blur(60px);
+            z-index: -1;
+            opacity: 0.8;
+            animation: pulseGlow 4s infinite alternate ease-in-out;
+        }
+
+        .glow-dark {
+            background: linear-gradient(135deg, #DBEAFE, #93C5FD);
+        }
+
+        .glow-light {
+            background: linear-gradient(135deg, #FEF3C7, #FDE68A);
+        }
+
+        @keyframes pulseGlow {
+            0% {
+                opacity: 0.6;
+                transform: scale(0.95);
+            }
+
+            100% {
+                opacity: 1;
+                transform: scale(1.05);
+            }
+        }
+
+        /* Transliteration Focus */
+        .transliteration {
+            font-size: 4rem;
+            font-weight: 900;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5rem;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 6rem 4rem;
+            border-radius: 40px;
+            backdrop-filter: blur(20px);
+            border: 2px solid rgba(255, 255, 255, 1);
+            box-shadow: 0 40px 80px -20px rgba(0, 0, 0, 0.08);
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .transliteration::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: conic-gradient(from 0deg, transparent, rgba(245, 158, 11, 0.1), transparent);
+            animation: rotate 12s linear infinite;
+            z-index: -1;
+        }
+
+        @keyframes rotate {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .transliteration .eng {
+            color: var(--text-muted);
+        }
+
+        .transliteration .arrow {
+            color: var(--accent-gold);
+            font-size: 3.5rem;
+            transform: rotate(90deg);
+            margin: 1rem 0;
+            animation: bounceDown 2s infinite;
+        }
+
+        @keyframes bounceDown {
+
+            0%,
+            100% {
+                transform: rotate(90deg) translateX(0);
+            }
+
+            50% {
+                transform: rotate(90deg) translateX(20px);
+            }
+        }
+
+        .transliteration .bng {
+            background: linear-gradient(to right, var(--accent-blue), #0F172A);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent !important;
+        }
+
+        @media (max-width: 968px) {
+
+            .split,
+            .split.reverse {
+                flex-direction: column;
+                text-align: center;
+                gap: 3rem;
+            }
+
+            .theme-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .transliteration {
+                font-size: 2.5rem;
+                padding: 3rem 1.5rem;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            .floating-icon.bottom-right {
+                width: 70px;
+                right: -10px;
+                bottom: -20px;
+            }
+
+            .floating-badge.top-left {
+                left: -10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Dynamic Background Effects -->
+    <div class="bg-container">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="shape shape-circle"></div>
+        <div class="shape shape-square"></div>
+        <div class="particle p1"></div>
+        <div class="particle p2"></div>
+        <div class="particle p3"></div>
+    </div>
+
+    <!-- 1. Hero Section -->
+    <section class="hero hidden">
+        <img src="img/logo2.png" alt="Bakkorup Voice Typing" class="hero-logo">
+        <h1>Speak. And let the magic type.</h1>
+        <p style="max-width: 700px; margin: 0 auto;">The ultimate zero-latency, 100% offline Bengali voice typing and
+            Banglish transliteration engine for Windows.</p>
+
+        <div class="cta-group">
+            <a href="https://github.com/affaz101/Bakkorup-Voice-Typing/releases/download/BakkorupVoiceTyping/BakkorupVoiceTyping.exe"
+                class="btn btn-primary">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                Download for Windows
+            </a>
+            <a href="https://github.com/affaz101/Bakkorup-Voice-Typing" class="btn btn-secondary" target="_blank">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path
+                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                    </path>
+                </svg>
+                View GitHub
+            </a>
+        </div>
+    </section>
+
+    <!-- 2. Action Showcase -->
+    <section class="split hidden">
+        <div class="split-content">
+            <h2>Instant. Private.<br>Pure Magic.</h2>
+            <p>Tired of waiting for the cloud to process your words? Bakkorup is powered by an ultra-fast offline AI
+                engine (Sherpa-ONNX) that sits directly on your PC.</p>
+            <p>Just press <strong
+                    style="color:var(--accent-blue); background: rgba(29,78,216,0.1); padding: 4px 10px; border-radius: 6px;">Alt
+                    + V</strong> anywhere—in Word, Notepad, or Browser—and watch your words appear in real-time. Total
+                privacy, zero internet dependency.</p>
+        </div>
+        <div class="split-visual">
+            <div class="floating-badge top-left">✨ Zero Latency</div>
+            <img src="img/logo.png" alt="Icon" class="floating-icon bottom-right">
+            <div class="glass-card">
+                <img src="img/listening.png" alt="Bakkorup typing in action">
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Banglish Transliteration -->
+    <section class="hidden">
+        <div class="transliteration">
+            <div class="eng">"ami bhalo achi"</div>
+            <div class="arrow">↓</div>
+            <div class="bng">"আমি ভালো আছি"</div>
+            <p
+                style="font-size: 1.25rem; font-weight: 400; color: var(--text-muted); text-align: center; margin-top: 1.5rem; max-width: 700px; line-height: 1.6;">
+                Love typing phonetically? Our built-in Banglish parser understands your natural flow and perfectly
+                transliterates it on the fly. No extra keyboards needed!
+            </p>
+        </div>
+    </section>
+
+    <!-- 4. Premium UI (Day / Night) -->
+    <section class="theme-showcase hidden">
+        <div style="max-width: 800px; margin: 0 auto;">
+            <h2>A Premium Borderless Experience</h2>
+            <p>Software shouldn't just work well; it should look stunning. Bakkorup features a glass-like borderless UI
+                with native Taskbar and System Tray integration. Switch effortlessly between day and night aesthetics.
+            </p>
+        </div>
+
+        <div class="theme-grid">
+            <div class="theme-item">
+                <div class="glow-behind glow-dark"></div>
+                <div class="glass-card" style="transform: perspective(1200px) rotateY(5deg);">
+                    <img src="img/dark.png" alt="Dark Mode">
+                </div>
+            </div>
+            <div class="theme-item">
+                <div class="glow-behind glow-light"></div>
+                <div class="glass-card" style="transform: perspective(1200px) rotateY(-5deg);">
+                    <img src="img/light.png" alt="Light Mode">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Final CTA -->
+    <section class="hero hidden" style="min-height: 60vh; position: relative;">
+        <!-- Extra glowing orb behind final CTA -->
+        <div class="orb orb-1"
+            style="width: 800px; height: 800px; top: 50%; left: 50%; transform: translate(-50%, -50%); opacity: 0.3; z-index: -1;">
+        </div>
+
+        <h2>Ready to type at the speed of thought?</h2>
+        <p style="margin-bottom: 2rem;">Join the revolution of Bengali voice typing today. Completely free and
+            open-source.</p>
+        <div class="cta-group">
+            <a href="https://github.com/affaz101/Bakkorup-Voice-Typing/releases/download/BakkorupVoiceTyping/BakkorupVoiceTyping.exe"
+                class="btn btn-primary" style="padding: 1.5rem 4rem; font-size: 1.4rem;">
+                Download Now
+            </a>
+        </div>
+    </section>
+
+    <!-- Intersection Observer Script for scroll animations -->
+    <script>
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.15
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                    observer.unobserve(entry.target); // Play animation only once
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.hidden').forEach((element) => {
+            observer.observe(element);
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://affaz101.github.io/Bakkorup-Voice-Typing/sitemap.xml

@@ -1,10 +1,10 @@
 <div align="center">
   
-# 🚀 Bakkorup Voice Typing (বাক্যরূপ)
+# 🚀 Bakkorup Voice Typing Software for PC
 
-**আপনার মুখের কথা এখন টাইপ হবে বিদ্যুতগতিতে! সম্পূর্ণ অফলাইন, প্রাইভেট এবং প্রিমিয়াম বাংলা ভয়েস টাইপিং এক্সপেরিয়েন্স।**
+**The Ultimate Offline Bengali Voice Typing & Banglish Transliteration App for Windows.**
 
-![Status](https://img.shields.io/badge/Status-Exciting_Release!-success?style=for-the-badge) ![Platform](https://img.shields.io/badge/Platform-Windows-blue?style=for-the-badge) ![Language](https://img.shields.io/badge/Language-Bangla_&_Banglish-orange?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Exciting_Release!-success?style=for-the-badge) ![Platform](https://img.shields.io/badge/Platform-Windows-blue?style=for-the-badge) ![Language](https://img.shields.io/badge/Language-Bengali_&_Banglish-orange?style=for-the-badge) ![SEO](https://img.shields.io/badge/Offline-Speech_to_Text-purple?style=for-the-badge)
 
 </div>
 
@@ -13,124 +13,122 @@
 
 ---
 
-## 📖 প্রথম অধ্যায়: একটি দৈনন্দিন বিরক্তি (The Frustration)
+## 📖 Chapter 1: The Everyday Frustration
 
-একটু কল্পনা করুন তো—আপনার অফিসে বসের কাছে একটি লম্বা রিপোর্ট পাঠাতে হবে, অথবা ফেসবুকে নিজের কোনো একটি দারুণ অভিজ্ঞতা নিয়ে বড়সড় একটি স্ট্যাটাস লিখতে হবে। ভাষাটা অবশ্যই বাংলা! 
+Imagine having to write a long Bengali report for the office or a lengthy, heartfelt Facebook post. You place your hands on the keyboard. If you're using traditional typing tools like Avro or Bijoy, it takes an enormous amount of time. Writing complex Bengali conjuncts (যুক্তাক্ষর) can quickly become frustrating. 
 
-আপনি কীবোর্ডে হাত রাখলেন। যদি আপনি অভ্র (Avro) বা বিজয় (Bijoy) ব্যবহারকারী হন, তবে আপনাকে নিশ্চয়ই প্রচুর সময় নিয়ে টাইপ করতে হবে। অনেক সময় যুক্তাক্ষর লিখতে গিয়ে মেজাজ খারাপ হয়ে যায়। তখন আমাদের মনে হয়—*"ইশ! যদি এমন কিছু থাকত, আমি মুখে বলে যেতাম আর পিসি নিজে নিজেই সেটা টাইপ করে নিতো!"*
+We often think: *"I wish there was a tool where I could just speak, and my PC would type it out automatically!"*
 
-হ্যাঁ, ইন্টারনেটে অনেক ভয়েস টাইপিং টুল আছে। কিন্তু সেগুলোর মূল সমস্যা হলো তিনটি:
-১. **ল্যাটেন্সি (Latency):** আপনি কথা বলার কয়েক সেকেন্ড পর লেখা স্ক্রিনে আসে। এটি মনোযোগ নষ্ট করে দেয়।
-২. **ইন্টারনেট নির্ভরশীলতা:** আপনার পিসিতে ইন্টারনেট না থাকলে বা স্পিড স্লো থাকলে এগুলো কাজই করে না।
-৩. **প্রাইভেসি (Privacy) ঝুঁকি:** আপনার বলা ব্যক্তিগত কথাগুলো থার্ড-পার্টি সার্ভারে (Cloud) চলে যায় প্রসেস হওয়ার জন্য। 
+Yes, there are voice typing tools on the internet. But almost all of them suffer from three massive flaws:
+1. **High Latency:** You speak, and the text appears seconds later. It breaks your concentration.
+2. **Internet Dependency:** If your internet drops or is slow, you can't type a single word.
+3. **Severe Privacy Risks:** Your private voice data, confidential office chats, or personal stories are uploaded to third-party cloud servers to be processed.
 
-এই সমস্যাগুলোর কি কোনো সমাধান নেই? এমন কোনো টুল কি হতে পারে না, যেটা হবে সুপারফাস্ট, অফলাইন, এবং দেখতে হবে একদম প্রিমিয়াম?
-
-<br>
-
----
-
-## 💡 দ্বিতীয় অধ্যায়: 'বাক্যরূপ' এর জন্ম (The Idea)
-
-উপরের প্রশ্নগুলোর উত্তর খুঁজতেই জন্ম নিয়েছে **'বাক্যরূপ (Bakkorup)'**! 
-
-আমরা এমন একটি সফটওয়্যার তৈরি করতে চেয়েছিলাম, যেটি কোনো ক্লাউড সার্ভারের জন্য অপেক্ষা করবে না। যেটি আপনার কম্পিউটারের ভেতরেই একটি ছোটখাটো ব্রেইন বা এআই (AI) হিসেবে বসে থাকবে। 
-
-আপনি যখনই মাইক্রোফোনে কথা বলবেন, এই এআই আপনার কথাগুলো শুনবে এবং চোখের পলকে তা টেক্সটে রূপান্তর করে দেবে। শুধু তাই নয়, এটি এমনভাবে কাজ করবে যেন আপনি মাইক্রোসফট ওয়ার্ড, নোটপ্যাড বা গুগল ক্রোমের যেখানেই মাউসের কার্সর রাখুন না কেন—এটি ঠিক সেখানেই ম্যাজিকের মতো আপনার কথাগুলো টাইপ করে দেবে! 
-
-আর সবচেয়ে বড় কথা, আপনার ডেটা আপনার পিসির বাইরে কোথাও যাবে না। ১০০% প্রাইভেসি!
+Isn't there a better solution? A tool that is lightning-fast, works completely offline, and looks like a premium software?
 
 <br>
 
 ---
 
-## 🧠 তৃতীয় অধ্যায়: ম্যাজিকটা আসলে কীভাবে কাজ করে? (The Magic Behind the Scenes)
+## 💡 Chapter 2: The Birth of "Bakkorup"
 
-'বাক্যরূপ' এর এই জিরো-ল্যাটেন্সি বা বিদ্যুতগতির পেছনের রহস্য হলো এর **ডুয়েল ইঞ্জিন আর্কিটেকচার**।
+To answer those exact questions, we created **Bakkorup (বাক্যরূপ)**!
 
-### ১. অফলাইন এআই ইঞ্জিন (The Local Power)
-অ্যাপটিতে বিশ্বের অন্যতম সেরা `sherpa-onnx` স্ট্রিমিং মডেল ব্যবহার করা হয়েছে। এটি একটি ল্যাঙ্গুয়েজ মডেল যা আপনার পিসির নিজস্ব হার্ডওয়্যার (CPU/RAM) ব্যবহার করে ভয়েস রিকগনিশন করে। 
-প্রথমবার যখন আপনি অ্যাপটি চালু করবেন, এটি ব্যাকগ্রাউন্ডে মাত্র ৬০ মেগাবাইটের একটি ল্যাঙ্গুয়েজ মডেল ফাইল ডাউনলোড করে নেবে। এরপর থেকে এটি চিরজীবনের জন্য ইন্টারনেট ছাড়াই কাজ করতে সক্ষম! 
+We wanted to build a Bengali Speech-to-Text software that doesn't wait for cloud servers. A tool that acts as a mini-AI brain sitting directly *inside* your computer.
 
-### ২. রিমোট ক্লাউড ইঞ্জিন (For Low-End PCs)
-অনেকের কম্পিউটারের কনফিগারেশন অনেক পুরোনো হতে পারে, যেখানে এআই মডেল রান করলে পিসি স্লো হয়ে যায়। তাদের কথা ভেবেই এতে একটি 'Remote' কানেকশন মোড রাখা হয়েছে। 
-আপনি চাইলে যেকোনো হাই-পারফরম্যান্স ওয়েব-সকেট (WebSocket) সার্ভারে অ্যাপটিকে কানেক্ট করতে পারেন। তখন অ্যাপটি ইন্টারনেটের মাধ্যমে সুপারফাস্ট ট্রান্সক্রিপশন করে দেবে! 
+Whenever you speak into your microphone, this AI listens and instantly converts your voice to text. Better yet, it works seamlessly across your operating system. Whether your cursor is in Microsoft Word, Notepad, Google Chrome, or Facebook—it magically types out your words right there!
+
+And the best part? Your data never leaves your computer. **100% Guaranteed Privacy.**
 
 <br>
 
 ---
 
-## 🎨 চতুর্থ অধ্যায়: ডিজাইন—যা চোখে আটকে যায় (The Design Philosophy)
+## 🧠 Chapter 3: How Does The Magic Work?
 
-সাধারণত পাইথন (Python) দিয়ে তৈরি করা ডেস্কটপ অ্যাপগুলোর ইউজার ইন্টারফেস (UI) খুব একটা আকর্ষণীয় হয় না। দেখতে অনেক পুরোনো এবং বোরিং মনে হয়। কিন্তু 'বাক্যরূপ' এর ক্ষেত্রে আমরা কোনো আপস করতে চাইনি!
+The secret behind Bakkorup's zero-latency, lightning-fast typing is its **Dual Engine Architecture**.
 
-আমরা চেয়েছি অ্যাপটি ওপেন করার সাথে সাথেই ইউজারের মনে একটি "ওয়াও (Wow)" ফিলিংস আসুক। 
-এজন্য আমরা `CustomTkinter` ব্যবহার করে অ্যাপটিকে একটি **গ্লাস-লাইক (Glass-like) বর্ডারলেস ডিজাইন** দিয়েছি। 
-*   **বর্ডারলেস (Borderless):** উইন্ডোজের গতানুগতিক টাইটেলবারটি সরিয়ে দিয়ে আমরা নিজস্ব কাস্টম টাইটেলবার তৈরি করেছি, যা ধরে আপনি অ্যাপটিকে স্ক্রিনের যেকোনো জায়গায় সরাতে পারবেন।
-*   **ডে/ডার্ক মোড:** আপনি কি ডার্ক মোড ভালোবাসেন? নাকি লাইট মোড? অ্যাপটির ভেতরে থাকা কালার থিমগুলো প্রফেশনাল ডিজাইনারদের কালার-প্যালেট থেকে বাছাই করা হয়েছে, যা চোখের জন্য অত্যন্ত আরামদায়ক।
+### 1. The Offline AI Engine (Local Power)
+Bakkorup leverages one of the world's best streaming AI models: `sherpa-onnx`. This language model uses your PC's local hardware (CPU/RAM) to perform speech recognition. 
+The first time you run the app, it automatically downloads a highly optimized, lightweight (60MB) language model. From then on, it is capable of transcribing Bengali voice to text forever—**without any internet connection!**
 
-<br>
-
----
-
-## ⌨️ পঞ্চম অধ্যায়: বাংলা নাকি বাংলিশ? (Two Modes, One Goal)
-
-বাঙালিদের মধ্যে টাইপিং নিয়ে দুটি বড় গ্রুপ আছে:
-একদল শুদ্ধ বাংলা ফন্টে (যেমন: "আমি বাংলায় গান গাই") লিখতে ভালোবাসেন। 
-আরেক দল ইংরেজি কীবোর্ড ব্যবহার করে বাংলিশে (যেমন: "ami banglay gan gai") লিখতে বেশি স্বাচ্ছন্দ্যবোধ করেন।
-
-'বাক্যরূপ' এই দুটি দলের কথাই মাথায় রেখেছে!
-অ্যাপটিতে দুটি আলাদা টাইপিং মোড রয়েছে:
-*   **Bangla মোড:** আপনি মুখে যা বলবেন, তা একদম শুদ্ধ বাংলা অক্ষরে টাইপ হবে। অফিশিয়াল কাজের জন্য এটি পারফেক্ট।
-*   **Banglish মোড:** এটি একটি অসাধারণ ফিচার! আপনি বাংলায় কথা বলবেন, আর অ্যাপটির ভেতরে থাকা ফোনেটিক পার্সার (`bnbphoneticparser`) মুহূর্তের মধ্যে সেই বাংলা কথাটিকে ইংরেজি অক্ষরের 'বাংলিশ' ফরম্যাটে রূপান্তর করে স্ক্রিনে টাইপ করে দেবে! 
+### 2. The Remote Cloud Engine (For Low-End PCs)
+We understand that some older computers might struggle to run AI models locally. For them, we’ve included a **Remote Connection Mode**. 
+You can easily connect the app to any high-performance WebSocket server. Bakkorup will securely stream your audio and bring back the text at blazing speeds!
 
 <br>
 
 ---
 
-## 🦸 ষষ্ঠ অধ্যায়: নেপথ্যের কারিগর (The Unseen Hero: Tray & Hotkeys)
+## 🎨 Chapter 4: A Design That Catch The Eye
 
-একটি পারফেক্ট ডেস্কটপ অ্যাপ্লিকেশনের বৈশিষ্ট্য হলো—এটি আপনার কাজের মাঝে বিরক্তি সৃষ্টি করবে না। 
+Desktop apps built with Python usually suffer from boring, outdated User Interfaces. We refused to compromise on design.
 
-'বাক্যরূপ' কে এমনভাবে ডিজাইন করা হয়েছে যে, আপনি চাইলে এটিকে মিনিমাইজ (Minimize) করে সিস্টেম ট্রে-তে (System Tray) লুকিয়ে রাখতে পারেন। 
-*   **টাস্কবার ইন্টিগ্রেশন:** বর্ডারলেস অ্যাপ হওয়া সত্ত্বেও উইন্ডোজের কোর এপিআই (Win32 API) ব্যবহার করে এটিকে জোরপূর্বক টাস্কবারে পিন করা হয়েছে, যাতে এটি অন্য দশটা নেটিভ অ্যাপের মতোই আচরণ করে।
-*   **গ্লোবাল শর্টকাট (Global Hotkeys):** অ্যাপটি ট্রে-তে লুকিয়ে থাকলেও আপনাকে মাউস ধরতে হবে না! আপনি পিসির যেকোনো প্রান্ত থেকে শর্টকাট চাপলেই ম্যাজিক শুরু হবে:
-    *   `Alt + V` ➔ কথা বলা শুরু বা বন্ধ করুন।
-    *   `Alt + 1` ➔ বাংলা টাইপিং মোডে সুইচ করুন।
-    *   `Alt + 2` ➔ বাংলিশ (Banglish) টাইপিং মোডে সুইচ করুন।
+We wanted users to feel a sense of "Wow" the moment they open the app. Using `CustomTkinter`, we crafted a **Premium Glass-like Borderless Interface**.
+*   **Borderless Magic:** We removed the default Windows title bar and built a custom dragging mechanism. You can smoothly drag the app anywhere on your screen.
+*   **Day/Night Mode:** Love dark mode? Prefer light mode? Our color palettes are carefully curated by professional designers to be soothing to the eyes.
 
 <br>
 
 ---
 
-## 🚀 সপ্তম অধ্যায়: আপনি কীভাবে ম্যাজিকটি অনুভব করবেন? (How to Experience It)
+## ⌨️ Chapter 5: Bangla or Banglish? You Choose!
 
-'বাক্যরূপ' ব্যবহার করা এতটা সহজ যে, কম্পিউটারের বেসিক জ্ঞান থাকলেই যে কেউ এটি চালাতে পারবেন। আমরা ইউজারদের দুটি ভাগে ভাগ করেছি:
+Bengali typists generally fall into two categories:
+One group loves typing in pure Bengali script (e.g., "আমি বাংলায় গান গাই"). 
+The other group is much more comfortable typing Bengali phonetically using an English keyboard (e.g., "ami banglay gan gai").
 
-### 👤 সাধারণ ব্যবহারকারীদের জন্য (The Normal Users)
-আপনার পিসিতে কোনো কোডিং নলেজ বা সফটওয়্যার ইনস্টল করার দরকার নেই! জাস্ট ৩টি সিম্পল স্টেপ:
-১. এই পেজের ডানপাশে থাকা **Releases** সেকশনে যান।
-২. সেখান থেকে `BakkorupVoiceTyping.exe` নামের ফাইলটি ডাউনলোড করুন।
-৩. ডাউনলোড শেষে ফাইলটিতে ডাবল ক্লিক করে ওপেন করুন। (প্রথমবার চালু হওয়ার সময় এটি এআই ল্যাঙ্গুয়েজ মডেলটি অটোমেটিক্যালি ডাউনলোড করে নেবে)।
+Bakkorup caters to both! The app features two distinct transliteration modes:
+*   **Bangla Mode:** Speak normally, and it types perfectly in pure Bengali script. Ideal for professional and official documents.
+*   **Banglish Mode:** This is our most loved feature! Speak in Bengali, and our internal phonetic parser (`bnbphoneticparser`) will instantly transliterate your words and type them out in English alphabets (Banglish) in real-time!
 
-ব্যাস! আপনার কাজ শেষ! এবার যেকোনো জায়গায় মাউস কার্সর রেখে `Alt + V` চাপুন এবং কথা বলা শুরু করুন!
+<br>
 
-### 💻 ডেভেলপারদের জন্য (The Geeks & Developers)
-আপনি যদি একজন ডেভেলপার হন এবং কোডবেস নিয়ে এক্সপেরিমেন্ট করতে চান, তবে আপনাকে স্বাগতম!
+---
 
-১. প্রথমে গিটহাব থেকে প্রজেক্টটি ক্লোন করে ফোল্ডারে প্রবেশ করুন:
+## 🦸 Chapter 6: The Unseen Hero (System Tray & Hotkeys)
+
+A perfect desktop application shouldn't be a nuisance on your screen. 
+
+Bakkorup is designed to be minimized straight into your **System Tray**. 
+*   **Persistent Taskbar:** Despite being a borderless app, we utilized core Windows APIs (Win32 API) to forcefully pin it to the taskbar, making it behave like a true native application.
+*   **Global Hotkeys:** You don't even need to touch your mouse! No matter what app you are currently using, just hit the global shortcuts:
+    *   `Alt + V` ➔ Start or Stop listening instantly.
+    *   `Alt + 1` ➔ Switch to pure Bengali (Bangla) typing mode.
+    *   `Alt + 2` ➔ Switch to Banglish transliteration mode.
+
+<br>
+
+---
+
+## 🚀 Chapter 7: How Can You Experience The Magic?
+
+Using Bakkorup is so incredibly easy that anyone with basic computer knowledge can run it. We have divided our guide for two types of users:
+
+### 👤 For Normal Users (Just Download & Run!)
+You do NOT need to know coding, and you do NOT need to install Python. Just follow these 3 simple steps:
+1. Go to the **Releases** section on the right side of this page.
+2. Download the `BakkorupVoiceTyping.exe` file.
+3. Double-click to open the file. (On its very first run, it will automatically download the offline AI model in the background).
+
+That's it! Place your cursor in any text box and press `Alt + V` to start talking!
+
+### 💻 For Geeks & Developers (Run from Source)
+If you are a Python developer and want to experiment with our codebase, you are highly welcome!
+
+1. Clone the repository:
 ```bash
 git clone https://github.com/yourusername/Bakkorup-Voice-Typing.git
 cd Bakkorup-Voice-Typing/local
 ```
 
-২. ভার্চুয়াল এনভায়রনমেন্ট অ্যাক্টিভেট করে লাইব্রেরিগুলো ইনস্টল করুন:
+2. Activate your virtual environment and install dependencies:
 ```bash
 pip install -r requirements.txt
 pip install sherpa-onnx
 ```
 
-৩. এবার ম্যাজিক দেখতে মূল অ্যাপ্লিকেশনটি রান করুন:
+3. Run the main application to see the magic:
 ```bash
 python gui.py
 ```
@@ -139,50 +137,50 @@ python gui.py
 
 ---
 
-## 🔒 অষ্টম অধ্যায়: প্রাইভেসির গ্যারান্টি (A Promise of Privacy)
+## 🔒 Chapter 8: A Promise of Privacy
 
-'বাক্যরূপ' আপনার পিসিকে কখনো নোংরা করে না বা ডেটা চুরি করে না। 
-*   **জিরো ক্লাটার:** আপনি `.exe` ফাইলটি পিসির যেখানেই রাখুন না কেন, অ্যাপের যাবতীয় সেটিংস এবং ল্যাঙ্গুয়েজ মডেলগুলো উইন্ডোজের ইন্টারনাল `%APPDATA%\BakkorupVoiceTyping` ফোল্ডারে সেভ হয়ে থাকে। আপনার সফটওয়্যারের ফোল্ডারটি থাকে ১০০% ক্লিন।
-*   **জিরো ডেটা কালেকশন:** আমরা আপনার কোনো ভয়েস ডেটা বা টেক্সট স্টোর করি না। সবকিছু আপনার পিসির র‍্যামে প্রসেস হয়ে সাথে সাথে ডিলিট হয়ে যায়। 
-
-<br>
-
----
-
-## 🔮 নবম অধ্যায়: সামনে কী আসছে? (The Future)
-
-আমরা এখানেই থামতে চাই না। 'বাক্যরূপ' কে বাংলা ভাষার সেরা ভয়েস টাইপিং টুলে পরিণত করার জন্য আমাদের বেশ কিছু পরিকল্পনা রয়েছে:
-- **স্মার্ট পাংচুয়েশন:** কথা বলার গ্যাপ বুঝে অটোমেটিক কমা (,) বা দাঁড়ি (।) বসিয়ে দেওয়া।
-- **ভয়েস কমান্ড:** "নতুন লাইন", "সব মুছে ফেলো" এ ধরনের ভয়েস কমান্ড দিয়ে পিসি কন্ট্রোল করা।
-- **মাইক্রো-অ্যানিমেশন:** কথা বলার সময় স্ক্রিনে একটি সুন্দর অডিও ভিজ্যুয়ালাইজার (Audio Visualizer) যুক্ত করা।
+Bakkorup never clutters your PC or steals your data.
+*   **Zero Clutter:** No matter where you keep the `.exe` file, all your settings and AI models are securely saved in Windows' internal `%APPDATA%\BakkorupVoiceTyping` folder. Your software folder remains 100% clean.
+*   **Zero Data Collection:** We do not store your voice data or text. Everything is processed in your RAM and instantly deleted.
 
 <br>
 
 ---
 
-## 🤝 দশম অধ্যায়: আমাদের সাথে যুক্ত হোন (Call to Action)
+## 🔮 Chapter 9: What's Next? (The Future)
 
-বাংলা ভাষার প্রযুক্তিগত উন্নয়নে 'বাক্যরূপ' একটি ছোট্ট পদক্ষেপ মাত্র। এটি একটি সম্পূর্ণ ওপেন-সোর্স (Open-Source) প্রজেক্ট। 
-
-আমরা চাই কমিউনিটির সবাই মিলে এটিকে আরও বড় এবং নির্ভুল করে তুলুক। 
-আপনি যদি নতুন কোনো ফিচার অ্যাড করতে চান, ডিজাইন ইমপ্রুভ করতে চান বা কোনো বাগ ফিক্স করতে চান, তবে নির্দ্বিধায় প্রজেক্টটি **Fork** করুন এবং আপনার **Pull Request (PR)** পাঠান! 
-
-যেকোনো ধরনের আইডিয়া, আলোচনা বা সমস্যার কথা গিটহাবের **Issues** ট্যাবে আমাদের জানাতে পারেন। 
+We don't want to stop here. Our roadmap to making Bakkorup the greatest Bengali voice typing software includes:
+- **Smart Punctuation:** Automatically inserting commas (,) and periods (।) by understanding the pauses in your speech.
+- **Voice Commands:** Using commands like "New Paragraph" or "Delete All" to control your PC purely with your voice.
+- **Micro-Animations:** Adding beautiful, dynamic audio waveform visualizers while you speak.
 
 <br>
 
 ---
 
-## 📜 একাদশ অধ্যায়: লাইসেন্স (License)
+## 🤝 Chapter 10: Call to Action (Join the Community)
 
-এই প্রজেক্টটি সবার জন্য উন্মুক্ত এবং [MIT License](https://choosealicense.com/licenses/mit/)-এর অধীনে রিলিজ করা হয়েছে। 
-এর মানে হলো—আপনি চাইলে আপনার যেকোনো ব্যক্তিগত বা কমার্শিয়াল কাজে এটি ব্যবহার করতে, মডিফাই করতে বা রি-ডিস্ট্রিবিউট করতে পারবেন সম্পূর্ণ বিনামূল্যে!
+Bakkorup is just a small step toward advancing the Bengali language in the tech space. It is a completely **Open-Source** project.
+
+We want the community to come together to make it even bigger and more accurate. 
+If you want to add a new feature, improve the design, or fix a bug, please feel free to **Fork** the project and submit a **Pull Request (PR)**! 
+
+For any ideas, discussions, or bug reports, let us know in the **Issues** tab.
+
+<br>
+
+---
+
+## 📜 Chapter 11: License
+
+This project is open to everyone and released under the [MIT License](https://choosealicense.com/licenses/mit/). 
+This means you can use, modify, and redistribute this software for personal or commercial use completely free of charge!
 
 <br>
 
 ---
 
 <div align="center">
-  <h3>প্রযুক্তি দিয়ে মাতৃভাষাকে আরও সহজ করার এক অদম্য প্রয়াস — <b>বাক্যরূপ!</b></h3>
+  <h3>A relentless effort to make our mother tongue easier through technology — <b>Bakkorup!</b></h3>
   <i>Made with ❤️ for the Bengali Community</i>
 </div>
